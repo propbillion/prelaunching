@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+<title>メルセデス・ベンツ・プレイシズ・ビンガッティ・シティ | By BINGHATTI | スタジオ〜5ベッドルームレジデンス</title>
+<meta name="description" content="メルセデス・ベンツ・プレイシズ｜ビンガッティ・シティ - 世界初のメルセデス・ベンツ・ブランデッド・シティ。ドバイのナド・アル・シェバに12棟、スタジオ〜5ベッドルームのレジデンス。ビンガッティ開発。価格はお問い合わせください。">
+
+<!-- Performance hints -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://wa.me">
+<link rel="preload" as="image" href="WhatsApp Image 2026-09-13 at 09.41.40.jpeg" fetchpriority="high">
+<link rel="preload" as="style" href="styles.css">
+
+<!-- Inline critical font-display hint -->
+<style>
+  /* Critical: prevent FOUT shift */
+  html { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; }
+  /* Critical: hero placeholder background while image loads */
+  .hero { background: #1a1112; }
+  .hero2 { background: #fbfbfd; }
+  /* Critical: prevent layout shift on hero img */
+  .hero-bg img, .hero2-img { background: #1a1112; }
+  img { content-visibility: auto; }
+</style>
+
+<!-- Open Graph -->
+<meta property="og:title" content="メルセデス・ベンツ・プレイシズ・ビンガッティ・シティ・By BINGHATTI">
+<meta property="og:description" content="世界初のメルセデス・ベンツ・ブランデッド・シティ。ドバイのナド・アル・シェバに12棟、スタジオ〜5ベッドルームのレジデンス。ビンガッティ開発。">
+<meta property="og:image" content="WhatsApp Image 2026-09-13 at 09.41.40.jpeg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0B0B0C">
+
+<!-- Favicon - Mercedes-Benz Places gold M on dark -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='4' fill='%230B1E3D'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='36' font-weight='500' fill='%23C9A64A'%3EM%3C/text%3E%3C/svg%3E">
+
+<!-- Fonts: Source Serif 4 (display) + Inter (body) - Adobe's signature pairing -->
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17833027272"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-17833027272');
+</script>
+</head>
+<body>
+
+<!-- ============================ HEADER ============================ -->
+<header class="header" id="top">
+  <div class="header-row">
+        <a href="#top" class="brand-logo-text" aria-label="メルセデス・ベンツ・プレイシズ ビンガッティ・シティ ホーム">
+      <span class="brand-wordmark brand-shine">Mercedes-Benz Places</span>
+      <span class="brand-sub">Binghatti City</span>
+    </a>
+    <a href="tel:+918208749700" class="header-cta header-cta-call-blue" aria-label="メルセデス・ベンツ・プレイシズ ビンガッティ・シティに電話する">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+      </svg>
+      <span class="header-cta-text">今すぐ電話</span>
+    </a>
+  </div>
+</header>
+
+<!-- ============================ SEGMENTED ACTION BAR (below header) ============================ -->
+<div class="action-bar-wrap">
+  <nav class="action-bar" aria-label="クイックアクション">
+    <a href="https://wa.me/918857090799?text=%E3%83%A1%E3%83%AB%E3%82%BB%E3%83%87%E3%82%B9%E3%83%BB%E3%83%99%E3%83%B3%E3%83%84%E3%83%BB%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B7%E3%82%BA%E3%81%AE%E3%82%A2%E3%83%A1%E3%83%8B%E3%83%86%E3%82%A3%E3%81%A8%E3%83%A9%E3%82%A4%E3%83%95%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%81%AE%E8%A9%B3%E7%B4%B0%E3%82%92%E9%80%81%E3%81%A3%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84" target="_blank" rel="noopener" class="action-chip">アメニティ＆ライフスタイル</a>
+    <a href="https://wa.me/918857090799?text=%E3%83%A1%E3%83%AB%E3%82%BB%E3%83%87%E3%82%B9%E3%83%BB%E3%83%99%E3%83%B3%E3%83%84%E3%83%BB%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B7%E3%82%BA%20%E3%83%93%E3%83%B3%E3%82%AC%E3%83%83%E3%83%86%E3%82%A3%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%81%AE%E6%AD%A3%E7%A2%BA%E3%81%AA%E6%89%80%E5%9C%A8%E5%9C%B0%E3%82%92%E9%80%81%E3%81%A3%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84" target="_blank" rel="noopener" class="action-chip">所在地</a>
+    <a href="https://wa.me/918857090799?text=%E3%83%A1%E3%83%AB%E3%82%BB%E3%83%87%E3%82%B9%E3%83%BB%E3%83%99%E3%83%B3%E3%83%84%E3%83%BB%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B7%E3%82%BA%E3%81%AE%E6%94%AF%E6%89%95%E3%81%84%E3%83%97%E3%83%A9%E3%83%B3%E3%82%92%E9%80%81%E3%81%A3%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84" target="_blank" rel="noopener" class="action-chip">支払いプラン</a>
+    <a href="https://wa.me/918857090799?text=%E3%83%A1%E3%83%AB%E3%82%BB%E3%83%87%E3%82%B9%E3%83%BB%E3%83%99%E3%83%B3%E3%83%84%E3%83%BB%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B7%E3%82%BA%E3%81%AE%E4%BB%95%E6%A7%98%E3%81%A8%E3%83%9E%E3%83%86%E3%83%AA%E3%82%A2%E3%83%AB%E3%83%9C%E3%83%BC%E3%83%89%E3%82%92%E9%80%81%E3%81%A3%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84" target="_blank" rel="noopener" class="action-chip">仕様</a>
+    <a href="https://wa.me/918857090799?text=%E3%83%A1%E3%83%AB%E3%82%BB%E3%83%87%E3%82%B9%E3%83%BB%E3%83%99%E3%83%B3%E3%83%84%E3%83%BB%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B7%E3%82%BA%20%E3%83%93%E3%83%B3%E3%82%AC%E3%83%83%E3%83%86%E3%82%A3%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%81%AB%E3%81%AF%E4%BD%95%E6%88%B8%E3%81%AE%E5%9C%A8%E5%BA%AB%E3%81%8C%E3%81%82%E3%82%8A%E3%81%BE%E3%81%99%E3%81%8B%EF%BC%9F" target="_blank" rel="noopener" class="action-chip">在庫状況</a>
+    <a href="https://wa.me/918857090799?text=%E3%83%A1%E3%83%AB%E3%82%BB%E3%83%87%E3%82%B9%E3%83%BB%E3%83%99%E3%83%B3%E3%83%84%E3%83%BB%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B7%E3%82%BA%20%E3%83%93%E3%83%B3%E3%82%AC%E3%83%83%E3%83%86%E3%82%A3%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%81%AE%E6%9C%80%E4%BD%8E%E4%BE%A1%E6%A0%BC%E3%82%92%E6%95%99%E3%81%88%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84" target="_blank" rel="noopener" class="action-chip">最低価格</a>
+    <a href="https://wa.me/918857090799?text=%E3%83%A1%E3%83%AB%E3%82%BB%E3%83%87%E3%82%B9%E3%83%BB%E3%83%99%E3%83%B3%E3%83%84%E3%83%BB%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B7%E3%82%BA%E3%81%AE%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%81%A8%E8%B7%9D%E9%9B%A2%E3%81%AE%E8%A9%B3%E7%B4%B0%E3%82%92%E9%80%81%E3%81%A3%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84" target="_blank" rel="noopener" class="action-chip">アクセス</a>
+    <a href="https://wa.me/918857090799?text=%E3%83%A1%E3%83%AB%E3%82%BB%E3%83%87%E3%82%B9%E3%83%BB%E3%83%99%E3%83%B3%E3%83%84%E3%83%BB%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B7%E3%82%BA%E3%81%AE%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%97%E3%83%A9%E3%83%B3%E3%81%A8%E6%89%80%E5%9C%A8%E5%9C%B0%E3%83%9E%E3%83%83%E3%83%97%E3%82%92%E9%80%81%E3%81%A3%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84" target="_blank" rel="noopener" class="action-chip">マスタープラン</a>
+        <a href="https://wa.me/918857090799?text=%E3%83%A1%E3%83%AB%E3%82%BB%E3%83%87%E3%82%B9%E3%83%BB%E3%83%99%E3%83%B3%E3%83%84%E3%83%BB%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B7%E3%82%BA%E3%81%AE%E3%82%A2%E3%83%A1%E3%83%8B%E3%83%86%E3%82%A3%E3%83%95%E3%83%AD%E3%82%A2%E3%81%AE%E8%A9%B3%E7%B4%B0%E3%82%92%E9%80%81%E3%81%A3%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84" target="_blank" rel="noopener" class="action-chip">アメニティフロア</a>
+
+    <a href="https://wa.me/918857090799?text=%E3%83%A1%E3%83%AB%E3%82%BB%E3%83%87%E3%82%B9%E3%83%BB%E3%83%99%E3%83%B3%E3%83%84%E3%83%BB%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B7%E3%82%BA%E3%81%AE%E9%96%93%E5%8F%96%E3%82%8A%E3%81%A8%E3%83%95%E3%83%AD%E3%82%A2%E3%83%97%E3%83%A9%E3%83%B3%E3%82%92%E9%80%81%E3%81%A3%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84" target="_blank" rel="noopener" class="action-chip">ユニットプラン</a>
+    <a href="https://wa.me/918857090799?text=%E3%83%A1%E3%83%AB%E3%82%BB%E3%83%87%E3%82%B9%E3%83%BB%E3%83%99%E3%83%B3%E3%83%84%E3%83%BB%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B7%E3%82%BA%E3%81%AE%E5%85%A8%E3%82%A2%E3%83%A1%E3%83%8B%E3%83%86%E3%82%A3%E3%83%AA%E3%82%B9%E3%83%88%E3%82%92%E9%80%81%E3%81%A3%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84" target="_blank" rel="noopener" class="action-chip">ワールドクラスのアメニティ</a>
+    <a href="https://wa.me/918857090799?text=%E3%83%A1%E3%83%AB%E3%82%BB%E3%83%87%E3%82%B9%E3%83%BB%E3%83%99%E3%83%B3%E3%83%84%E3%83%BB%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B7%E3%82%BA%E3%81%AE%E9%9B%BB%E5%AD%90%E3%83%91%E3%83%B3%E3%83%95%E3%83%AC%E3%83%83%E3%83%88%E3%82%92%E9%80%81%E3%81%A3%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84" target="_blank" rel="noopener" class="action-chip">電子パンフレット</a>
+  </nav>
+</div>
+
+<!-- ============================ MICRO STRIP (PROPBILLION - ghost visibility) ============================ -->
+<div class="page-offset">
+  <div style="background: var(--bone); padding: 4px 1rem; text-align: center; border-bottom: 1px solid rgba(0,0,0,0.025);">
+    <p style="font-size: 8.5px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(94,94,99,0.22); font-weight: 500; margin: 0;">
+      提供：PROPBILLION（正規チャネルパートナー）
+    </p>
+  </div>
+</div>
+
+<!-- ============================ HERO (FULL BACKGROUND) ============================ -->
+<section class="hero">
+  <div class="hero-bg">
+    <img class="hero-bg-video" src="WhatsApp Image 2026-09-13 at 09.41.40.jpeg" width="1920" height="1080" alt="メルセデス・ベンツ・プレイシズ ビンガッティ・シティ 夕暮れの空撮" fetchpriority="high">
+  </div>
+  <div class="hero-inner hero-inner-v2">
+    <span class="hero-presents reveal">BINGHATTI プレゼンツ</span>
+
+    <div class="hero-token-pill reveal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+      新規発売 - 世界初のメルセデス・ベンツ・ブランデッド・シティ
+    </div>
+
+    <h1 class="hero-mainline reveal reveal-d1">
+      築かれた世界 <em>明日を超えて、ビンガッティ・シティ</em>
+    </h1>
+
+
+    <p class="hero-support reveal reveal-d2">
+      ナド・アル・シェバ &middot; ドバイ
+    </p>
+
+    <p class="hero-headline-v2 hero-config-pill reveal reveal-d2">
+  スタジオ | 1 | 2 | 3 | 4 | 5 ベッドルームレジデンス <br><em>12棟のタワー・マスタープランされた都市</em>
+</p>
+
+    <ul class="hero-usp-strip reveal reveal-d3">
+      <li>BY BINGHATTI | ドバイで最も先鋭的なプライベートデベロッパー</li>
+    
+      <li>メルセデス・ベンツ・プレイシズ | BINGHATTI CITY・新規発売</li>
+    </ul>
+
+    <!-- INLINE HERO FORM -->
+    <form id="heroForm" class="hero-form reveal reveal-d3">
+      <div class="hf-fields">
+        <input id="hf_name" type="text" placeholder="お名前" class="hf-input" required>
+        <input id="hf_mob" type="tel" placeholder="電話番号（+91）" class="hf-input" required>
+      </div>
+      <button type="submit" class="hf-submit">最良の発売価格を確認する <span>→</span></button>
+      <p class="hf-trust">価格はお問い合わせください・戸数限定・発売価格はお問い合わせください</p>
+    </form>
+
+    <div class="hero-secondary-ctas reveal reveal-d3">
+      <a href="https://wa.me/918857090799?text=%E3%83%A1%E3%83%AB%E3%82%BB%E3%83%87%E3%82%B9%E3%83%BB%E3%83%99%E3%83%B3%E3%83%84%E3%83%BB%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B7%E3%82%BA%20%E3%83%93%E3%83%B3%E3%82%AC%E3%83%83%E3%83%86%E3%82%A3%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%81%AE%E3%83%91%E3%83%B3%E3%83%95%E3%83%AC%E3%83%83%E3%83%88%E3%81%8C%E6%AC%B2%E3%81%97%E3%81%84%E3%81%A7%E3%81%99" target="_blank" rel="noopener" class="hsc-link">パンフレットをダウンロード</a>
+      <span class="hsc-divider" aria-hidden="true">·</span>
+      <a href="https://wa.me/918857090799?text=%E3%83%A1%E3%83%AB%E3%82%BB%E3%83%87%E3%82%B9%E3%83%BB%E3%83%99%E3%83%B3%E3%83%84%E3%83%BB%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B7%E3%82%BA%E3%81%AE%E3%83%95%E3%83%AD%E3%82%A2%E3%83%97%E3%83%A9%E3%83%B3%E3%82%92%E9%80%81%E3%81%A3%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84" target="_blank" rel="noopener" class="hsc-link">フロアプランを見る</a>
+      <span class="hsc-divider" aria-hidden="true">·</span>
+      <a href="https://wa.me/918857090799?text=%E3%83%A1%E3%83%AB%E3%82%BB%E3%83%87%E3%82%B9%E3%83%BB%E3%83%99%E3%83%B3%E3%83%84%E3%83%BB%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B7%E3%82%BA%20%E3%83%93%E3%83%B3%E3%82%AC%E3%83%83%E3%83%86%E3%82%A3%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E9%9B%BB%E8%A9%B1%E3%82%92%E4%BA%88%E7%B4%84%E3%81%97%E3%81%9F%E3%81%84%E3%81%A7%E3%81%99" target="_blank" rel="noopener" class="hsc-link">電話予約をする</a>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery: プロジェクト紹介 (moved right after Hero so customer sees photos first) -->
+<div class="auto-gallery" data-autoslide="true" style="margin-top: 0;">
+  <div class="ag-label">
+    <span class="eyebrow" style="margin-bottom: 0; color: var(--gold-deep);">プロジェクト紹介</span>
+  </div>
+  <div class="ag-track" data-track>
+    <div class="ag-slide" data-caption="Mercedes-Benz Places"><img src="WhatsApp Image 2026-09-13 at 06.54.30 (11).jpeg" alt="メルセデス・ベンツ・プレイシズ ビンガッティ・シティのタワー、夕暮れのドバイスカイライン" width="900" height="600" loading="lazy" decoding="async"><a href="https://wa.me/918857090799?text=%E3%83%A1%E3%83%AB%E3%82%BB%E3%83%87%E3%82%B9%E3%83%BB%E3%83%99%E3%83%B3%E3%83%84%E3%83%BB%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B7%E3%82%BA%E3%81%AE%E4%BD%8F%E6%88%B8%E3%81%8B%E3%82%89%E3%81%AF%E3%81%A9%E3%81%AE%E3%82%88%E3%81%86%E3%81%AA%E7%9C%BA%E6%9C%9B%E3%81%8C%E5%BE%97%E3%82%89%E3%82%8C%E3%81%BE%E3%81%99%E3%81%8B%EF%BC%9F" target="_blank" rel="noopener" class="ag-slide-tag">住まいからの眺望を見る <span>→</span></a></div>
+    <div class="ag-slide ag-slide-cta" data-caption="New Launch Offer">
+      <div class="ag-token-card">
+        <span class="atc-badge">期間限定オファー</span>
+        <h4>新規発売受付中</h4>
+        <p>次回リリースが始まる前に、メルセデス・ベンツ・プレイシズの優先割当とご希望のユニットについて、ご興味の登録をお願いします。</p>
+        <a href="https://wa.me/918857090799?text=%E3%83%A1%E3%83%AB%E3%82%BB%E3%83%87%E3%82%B9%E3%83%BB%E3%83%99%E3%83%B3%E3%83%84%E3%83%BB%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B7%E3%82%BA%E3%81%AE%E7%99%BA%E5%A3%B2%E3%82%AA%E3%83%95%E3%82%A1%E3%83%BC%E3%81%A8%E6%94%AF%E6%89%95%E3%81%84%E3%83%97%E3%83%A9%E3%83%B3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E8%A9%B3%E3%81%97%E3%81%8F%E7%9F%A5%E3%82%8A%E3%81%9F%E3%81%84%E3%81%A7%E3%81%99" target="_blank" rel="noopener" class="btn btn-sm ag-token-cta">発売価格を確保する <span>→</span></a>
+      </div>
+    </div>
+    <div class="ag-slide" data-caption="Mercedes-Benz Places"><img src="WhatsApp Image 2026-09-13 at 06.54.30 (5).jpeg" alt="メルセデス・ベンツ・プレイシズ - 12棟からなるビンガッティ・シティ・マスタープランの空撮" width="900" height="600" loading="lazy" decoding="async"><a href="https://wa.me/918857090799?text=%E3%83%A1%E3%83%AB%E3%82%BB%E3%83%87%E3%82%B9%E3%83%BB%E3%83%99%E3%83%B3%E3%83%84%E3%83%BB%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B7%E3%82%BA%E3%81%AE%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%97%E3%83%A9%E3%83%B3%E3%82%92%E9%80%81%E3%81%A3%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84" target="_blank" rel="noopener" class="ag-slide-tag">マスタープランを見る <span>→</span></a></div>
+    <div class="ag-slide" data-caption="Mercedes-Benz Places"><img src="WhatsApp Image 2026-09-13 at 06.54.30 (13).jpeg" alt="メルセデス・ベンツ・プレイシズ スカイインフィニティプールとカバナ" width="900" height="600" loading="lazy" decoding="async"><a href="https://wa.me/918857090799?text=%E3%83%A1%E3%83%AB%E3%82%BB%E3%83%87%E3%82%B9%E3%83%BB%E3%83%99%E3%83%B3%E3%83%84%E3%83%BB%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B7%E3%82%BA%E3%81%AE%E5%85%A8%E3%82%A2%E3%83%A1%E3%83%8B%E3%83%86%E3%82%A3%E3%83%AA%E3%82%B9%E3%83%88%E3%82%92%E9%80%81%E3%81%A3%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84" target="_blank" rel="noopener" class="ag-slide-tag">アメニティを見る <span>→</span></a></div>
+    <div class="ag-slide" data-caption="Mercedes-Benz Places"><img src="WhatsApp Image 2026-09-13 at 06.54.30 (15).jpeg" alt="メルセデス・ベンツ・プレイシズ スカイラインジョギングパスの空撮" width="900" height="600" loading="lazy" decoding="async"><a href="https://wa.me/918857090799?text=%E3%83%A1%E3%83%AB%E3%82%BB%E3%83%87%E3%82%B9%E3%83%BB%E3%83%99%E3%83%B3%E3%83%84%E3%83%BB%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B7%E3%82%BA%E3%81%AE%E3%82%B8%E3%83%A7%E3%82%AE%E3%83%B3%E3%82%B0%E3%83%91%E3%82%B9%E3%81%A8%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E3%82%A2%E3%83%A1%E3%83%8B%E3%83%86%E3%82%A3%E3%81%AE%E8%A9%B3%E7%B4%B0%E3%82%92%E9%80%81%E3%81%A3%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84" target="_blank" rel="noopener" class="ag-slide-tag">すべてのアメニティを見る <span>→</span></a></div>
+    <div class="ag-slide" data-caption="Mercedes-Benz Places"><img src="WhatsApp Image 2026-09-13 at 06.54.30 (2).jpeg" alt="メルセデス・ベンツ・プレイシズ ブルジュ・ハリファを望む天井高のロビー内観" width="900" height="600" loading="lazy" decoding="async"><a href="https://wa.me/918857090799?text=%E3%83%A1%E3%83%AB%E3%82%BB%E3%83%87%E3%82%B9%E3%83%BB%E3%83%99%E3%83%B3%E3%83%84%E3%83%BB%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B7%E3%82%BA%E3%81%AE%E3%83%AD%E3%83%93%E3%83%BC%E3%81%A8%E3%82%A8%E3%83%B3%E3%83%88%E3%83%A9%E3%83%B3%E3%82%B9%E4%BD%93%E9%A8%93%E3%81%AE%E8%A9%B3%E7%B4%B0%E3%82%92%E9%80%81%E3%81%A3%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84" target="_blank" rel="noopener" class="ag-slide-tag">ロビーを見る <span>→</span></a></div>
+    <div class="ag-slide" data-caption="Mercedes-Benz Places"><img src="WhatsApp Image 2026-09-13 at 06.54.30 (4).jpeg" alt="メルセデス・ベンツ・プレイシズ ビンガッティ・シティとブルジュ・ハリファを望むバルコニー" width="900" height="600" loading="lazy" decoding="async"><a href="https://wa.me/918857090799?text=%E3%83%A1%E3%83%AB%E3%82%BB%E3%83%87%E3%82%B9%E3%83%BB%E3%83%99%E3%83%B3%E3%83%84%E3%83%BB%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B7%E3%82%BA%E3%81%AE%E5%B1%8B%E5%A4%96%E3%82%A6%E3%82%A7%E3%83%AB%E3%83%8D%E3%82%B9%E3%82%A8%E3%83%AA%E3%82%A2%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E8%A9%B3%E3%81%97%E3%81%8F%E6%95%99%E3%81%88%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84" target="_blank" rel="noopener" class="ag-slide-tag">ウェルネスデッキを見る <span>→</span></a></div>
+    <div class="ag-slide" data-caption="Mercedes-Benz Places"><img src="WhatsApp Image 2026-09-13 at 06.54.30 (7).jpeg" alt="メルセデス・ベンツ・プレイシズ ビンガッティ・シティのタワー、夜間ライトアップ" width="900" height="600" loading="lazy" decoding="async"><a href="https://wa.me/918857090799?text=%E3%83%A1%E3%83%AB%E3%82%BB%E3%83%87%E3%82%B9%E3%83%BB%E3%83%99%E3%83%B3%E3%83%84%E3%83%BB%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B7%E3%82%BA%E3%81%AE%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%89%E3%83%BB%E3%83%97%E3%83%AD%E3%83%A0%E3%83%8A%E3%83%BC%E3%83%89%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E8%A9%B3%E3%81%97%E3%81%8F%E6%95%99%E3%81%88%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84" target="_blank" rel="noopener" class="ag-slide-tag">グランド・プロムナードを見る <span>→</span></a></div>
+    <div class="ag-slide" data-caption="Mercedes-Benz Places"><img src="WhatsApp Image 2026-09-13 at 06.54.30 (8).jpeg" alt="メルセデス・ベンツ・プレイシズ 自動車デザインにインスパイアされたリビング内観" width="900" height="600" loading="lazy" decoding="async"><a href="https://wa.me/918857090799?text=%E3%83%A1%E3%83%AB%E3%82%BB%E3%83%87%E3%82%B9%E3%83%BB%E3%83%99%E3%83%B3%E3%83%84%E3%83%BB%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B7%E3%82%BA%E3%81%AE%E4%BD%8F%E6%88%B8%E4%BB%95%E6%A7%98%E3%82%92%E3%81%99%E3%81%B9%E3%81%A6%E9%80%81%E3%81%A3%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84" target="_blank" rel="noopener" class="ag-slide-tag">仕様を見る <span>→</span></a></div>
+    <div class="ag-slide" data-caption="Mercedes-Benz Places"><img src="WhatsApp Image 2026-09-13 at 06.54.30 (9).jpeg" alt="メルセデス・ベンツ・プレイシズ ドバイスカイラインを望むリビング" width="900" height="600" loading="lazy" decoding="async"><a href="https://wa.me/918857090799?text=%E3%83%A1%E3%83%AB%E3%82%BB%E3%83%87%E3%82%B9%E3%83%BB%E3%83%99%E3%83%B3%E3%83%84%E3%83%BB%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B7%E3%82%BA%E5%91%A8%E8%BE%BA%E3%81%AE%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E6%83%85%E5%A0%B1%E3%82%92%E9%80%81%E3%81%A3%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84" target="_blank" rel="noopener" class="ag-slide-tag">商業施設の詳細を見る <span>→</span></a></div>
+    <div class="ag-slide" data-caption="Mercedes-Benz Places"><img src="WhatsApp Image 2026-09-13 at 06.54.30 (10)
