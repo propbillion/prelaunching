@@ -6138,3 +6138,78 @@ letter-spacing: 0.045em !important;
 @media (prefers-reduced-motion: reduce) {
   .call-float { animation: none !important; }
 }
+
+/* ============================================
+   Header refinements requested by client
+   ============================================ */
+
+/* "Call Now" header button - blue, not the default gold header-cta look */
+.header-cta.header-cta-call-blue {
+  background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%) !important;
+  color: #ffffff !important;
+  border: 1px solid var(--brand-dark) !important;
+  box-shadow: 0 6px 16px -6px rgba(7, 114, 181, 0.55), 0 0 0 1px rgba(255,255,255,0.18) inset !important;
+  animation: headerCtaPulse 2s ease-in-out infinite, callNowSeesaw 2.4s ease-in-out infinite !important;
+}
+.header-cta.header-cta-call-blue::after { display: none !important; }
+.header-cta.header-cta-call-blue:hover {
+  background: linear-gradient(135deg, var(--brand-light) 0%, var(--brand) 100%) !important;
+  border-color: var(--gold) !important;
+  animation-play-state: paused;
+  transform: translateY(-1px) scale(1.03);
+}
+@media (prefers-reduced-motion: reduce) {
+  .header-cta.header-cta-call-blue { animation: none !important; }
+}
+
+/* "Mercedes-Benz Places" wordmark - keep exact font/style, only add a shine sweep */
+.brand-wordmark.brand-shine {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(100deg,
+    #0C2E4A 0%, #0C2E4A 40%,
+    var(--brand-light) 50%,
+    #0C2E4A 60%, #0C2E4A 100%);
+  background-size: 220% 100%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: brandWordShine 4.5s ease-in-out infinite;
+}
+@keyframes brandWordShine {
+  0%   { background-position: 200% 0; }
+  55%  { background-position: -20% 0; }
+  100% { background-position: -20% 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .brand-wordmark.brand-shine {
+    animation: none;
+    -webkit-text-fill-color: #0C2E4A;
+    color: #0C2E4A;
+  }
+}
+
+/* "Binghatti City" - was too small under the wordmark, give it real presence */
+.brand-logo-text .brand-sub {
+  font-size: 13px !important;
+  letter-spacing: 0.14em !important;
+  font-weight: 700 !important;
+  color: var(--brand) !important;
+  margin-top: 3px !important;
+}
+@media (max-width: 640px) {
+  .brand-logo-text .brand-sub { font-size: 11px !important; }
+}
+
+/* Action bar pills - light minimalistic colour wash, shine already added above */
+.action-chip {
+  background: linear-gradient(135deg, rgba(7, 114, 181, 0.09) 0%, rgba(199, 209, 31, 0.07) 100%) !important;
+  border: 1px solid rgba(7, 114, 181, 0.16) !important;
+  color: var(--brand-dark) !important;
+}
+.action-chip:hover {
+  background: linear-gradient(135deg, rgba(7, 114, 181, 0.85) 0%, rgba(7, 114, 181, 0.95) 100%) !important;
+  color: #ffffff !important;
+  border-color: var(--brand) !important;
+}
