@@ -6085,3 +6085,56 @@ letter-spacing: 0.045em !important;
   .ag-slide-tag { font-size: 10.5px; padding: 0.4rem 0.8rem; left: 8px; bottom: 8px; }
   .ag-slide-tag.top-pos { top: 8px; }
 }
+
+/* ============================================
+   FINAL OVERRIDES - visible shine on every pill + playful Call Now wobble
+   ============================================ */
+
+/* Continuous auto-scroll marquee needs direct scrollLeft jumps, not CSS-smoothed ones */
+.action-bar { scroll-behavior: auto !important; }
+
+/* Make the shine sweep clearly visible on every regular pill, not just the gold one.
+   Delay comes from --shine-delay, set per-chip by script.js so it travels pill-to-pill. */
+.action-chip:not(.action-chip-featured)::after {
+  content: '' !important;
+  position: absolute !important;
+  top: 0; bottom: 0; left: 0;
+  width: 45% !important;
+  background: linear-gradient(100deg, transparent 0%, rgba(7, 114, 181, 0.34) 50%, transparent 100%) !important;
+  transform: translateX(-180%) skewX(-12deg);
+  animation: ambientShine 5s cubic-bezier(0.4, 0, 0.2, 1) infinite !important;
+  animation-delay: var(--shine-delay, 0s) !important;
+  opacity: 1 !important;
+  pointer-events: none;
+  z-index: 0;
+}
+.action-chip-featured::after {
+  animation-delay: var(--shine-delay, 0s) !important;
+}
+
+/* Call Now - playful seesaw wobble, distinct from the pulse/shine on other buttons */
+@keyframes callNowSeesaw {
+  0%, 100% { transform: rotate(0deg); }
+  12% { transform: rotate(-10deg); }
+  26% { transform: rotate(8deg); }
+  40% { transform: rotate(-6deg); }
+  54% { transform: rotate(5deg); }
+  68% { transform: rotate(-3deg); }
+  82% { transform: rotate(2deg); }
+  94% { transform: rotate(-1deg); }
+}
+.header-cta-call {
+  transform-origin: 50% 85%;
+  animation: callNowSeesaw 2.4s ease-in-out infinite;
+}
+.header-cta-call:hover { animation-play-state: paused; }
+
+/* Mercedes-Benz Places has no separate header call button - apply the same
+   playful wobble to the floating call action instead, alongside its existing pulse. */
+.call-float {
+  animation: callPulse 3s ease-in-out infinite, callNowSeesaw 2.4s ease-in-out infinite !important;
+}
+.call-float:hover { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) {
+  .call-float { animation: none !important; }
+}
