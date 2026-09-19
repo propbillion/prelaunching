@@ -3,7 +3,7 @@ document.addEventListener('click', function(e) {
   var el = e.target.closest('a[href*="wa.me"], a[href^="tel:"]');
   if (el && typeof gtag === 'function') {
     gtag('event', 'conversion', {
-      'send_to': 'AW-17833027272/Na30CJOL874cEMjNubdC'
+      'send_to': 'AW-17833027272/wltbCObqxP0cEMjNubdC'
     });
   }
 });
@@ -14,7 +14,7 @@ document.addEventListener('click', function(e) {
 function fireFormConversion() {
   if (typeof gtag === 'function') {
     gtag('event', 'conversion', {
-      'send_to': 'AW-17833027272/Na30CJOL874cEMjNubdC'
+      'send_to': 'AW-17833027272/wltbCObqxP0cEMjNubdC'
     });
   }
 }/* ============================================
