@@ -25,13 +25,34 @@
   img { content-visibility: auto; }
   /* Header: Nakheel developer badge next to the Bay Estates wordmark */
   .header-brand-group { display: flex; align-items: center; gap: 0.65rem; min-width: 0; }
-  .header-brand-divider { width: 1px; height: 26px; background: rgba(10,10,10,0.14); flex-shrink: 0; }
+  .header-brand-divider { width: 1px; height: 32px; background: rgba(10,10,10,0.14); flex-shrink: 0; }
   .header-developer-badge { display: flex; align-items: center; gap: 0.4rem; flex-shrink: 0; }
-  .header-developer-badge img { height: 18px; width: auto; display: block; }
+  .header-developer-badge img { height: 26px; width: auto; display: block; }
   .header-developer-badge span { font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--slate-light, #5697B9); font-weight: 600; white-space: nowrap; }
   @media (max-width: 480px) {
     .header-developer-badge span { display: none; }
-    .header-developer-badge img { height: 16px; }
+    .header-developer-badge img { height: 21px; }
+  }
+  /* Header: tiny trust microcopy above the Call Now button */
+  .header-cta-wrap { position: relative; flex-shrink: 0; }
+  .header-cta-microcopy {
+    position: absolute;
+    top: -12px;
+    right: 0;
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #1c7a3d;
+    background: #eafaf0;
+    border: 1px solid rgba(28,122,61,0.28);
+    padding: 1px 5px;
+    border-radius: 6px;
+    white-space: nowrap;
+    line-height: 1.3;
+    pointer-events: none;
+  }
+  @media (max-width: 380px) {
+    .header-cta-microcopy { display: none; }
   }
 </style>
 
@@ -74,12 +95,15 @@
         <span>By Nakheel</span>
       </span>
     </div>
-    <a href="tel:+918208749700" class="header-cta header-cta-call-blue" aria-label="Call Bay Estates Dubai Islands">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
-      </svg>
-      <span class="header-cta-text">Call Now</span>
-    </a>
+    <div class="header-cta-wrap">
+      <span class="header-cta-microcopy" aria-hidden="true">Call in your language</span>
+      <a href="https://wa.me/918857090799?text=Hi%2C%20I%20am%20interested%20in%20Bay%20Estates%20-%20Dubai%20Islands%20%28By%20Nakheel%29.%20Please%20call%20me%20back%20right%20away%20-%20a%20WhatsApp%20call%20or%20a%20call%20from%20an%20India%20number%20will%20reach%20me%2C%20no%20roaming%20or%20recharge%20charges%20either%20way.%20If%20possible%2C%20please%20arrange%20a%20callback%20from%20someone%20of%20my%20own%20nationality%20so%20we%20can%20speak%20in%20my%20language." target="_blank" rel="noopener" class="header-cta header-cta-call-blue" aria-label="Call Bay Estates Dubai Islands on WhatsApp">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+        <span class="header-cta-text">Call Now</span>
+      </a>
+    </div>
   </div>
 </header>
 
@@ -1097,7 +1121,7 @@
 </div>
 
 <!-- ============================ FLOATING CALL BUTTON ============================ -->
-<a href="tel:+918208749700" class="call-float" aria-label="Call Bay Estates Dubai Islands">
+<a href="https://wa.me/918857090799?text=Hi%2C%20I%20am%20interested%20in%20Bay%20Estates%20-%20Dubai%20Islands%20%28By%20Nakheel%29.%20Please%20call%20me%20back%20right%20away%20-%20a%20WhatsApp%20call%20or%20a%20call%20from%20an%20India%20number%20will%20reach%20me%2C%20no%20roaming%20or%20recharge%20charges%20either%20way.%20If%20possible%2C%20please%20arrange%20a%20callback%20from%20someone%20of%20my%20own%20nationality%20so%20we%20can%20speak%20in%20my%20language." target="_blank" rel="noopener" class="call-float" aria-label="Call Bay Estates Dubai Islands on WhatsApp">
   <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
   </svg>
@@ -1106,7 +1130,7 @@
 <!-- ============================ STICKY FOOTER BAR ============================ -->
 <div class="sticky-footer sf-mobile-only">
   <div class="sf-grid sf-grid-4">
-    <a href="tel:+918208749700" class="sf-btn sf-call" aria-label="Call Bay Estates Dubai Islands">
+    <a href="https://wa.me/918857090799?text=Hi%2C%20I%20am%20interested%20in%20Bay%20Estates%20-%20Dubai%20Islands%20%28By%20Nakheel%29.%20Please%20call%20me%20back%20right%20away%20-%20a%20WhatsApp%20call%20or%20a%20call%20from%20an%20India%20number%20will%20reach%20me%2C%20no%20roaming%20or%20recharge%20charges%20either%20way.%20If%20possible%2C%20please%20arrange%20a%20callback%20from%20someone%20of%20my%20own%20nationality%20so%20we%20can%20speak%20in%20my%20language." target="_blank" rel="noopener" class="sf-btn sf-call" aria-label="Call Bay Estates Dubai Islands on WhatsApp">
       <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
       </svg>
