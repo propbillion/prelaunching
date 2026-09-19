@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="dns-prefetch" href="https://wa.me">
-<link rel="preload" as="image" href="https://dubai-salesoffice.ae/bay-estates/public/images/hero.webp" fetchpriority="high">
+<link rel="preload" as="image" href="https://dubai-salesoffice.ae/bay-estates/public/images/gallery/gallery1.webp" fetchpriority="high">
 <link rel="preload" as="style" href="styles.css">
 
 <!-- Inline critical font-display hint -->
@@ -23,12 +23,22 @@
   /* Critical: prevent layout shift on hero img */
   .hero-bg img, .hero2-img { background: #1a1112; }
   img { content-visibility: auto; }
+  /* Header: Nakheel developer badge next to the Bay Estates wordmark */
+  .header-brand-group { display: flex; align-items: center; gap: 0.65rem; min-width: 0; }
+  .header-brand-divider { width: 1px; height: 26px; background: rgba(10,10,10,0.14); flex-shrink: 0; }
+  .header-developer-badge { display: flex; align-items: center; gap: 0.4rem; flex-shrink: 0; }
+  .header-developer-badge img { height: 18px; width: auto; display: block; }
+  .header-developer-badge span { font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--slate-light, #5697B9); font-weight: 600; white-space: nowrap; }
+  @media (max-width: 480px) {
+    .header-developer-badge span { display: none; }
+    .header-developer-badge img { height: 16px; }
+  }
 </style>
 
 <!-- Open Graph -->
 <meta property="og:title" content="Bay Estates &middot; Island E, Dubai Islands &middot; By NAKHEEL">
 <meta property="og:description" content="A limited collection of 3-7 bedroom villas and townhouses on Island E, Dubai Islands. Beachfront living, private beach access, marina connectivity and resort-style amenities.">
-<meta property="og:image" content="https://dubai-salesoffice.ae/bay-estates/public/images/hero.webp">
+<meta property="og:image" content="https://dubai-salesoffice.ae/bay-estates/public/images/gallery/gallery1.webp">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#0B0B0C">
 
@@ -53,10 +63,17 @@
 <!-- ============================ HEADER ============================ -->
 <header class="header" id="top">
   <div class="header-row">
-        <a href="#top" class="brand-logo-text" aria-label="Bay Estates Dubai Islands Home">
-      <span class="brand-wordmark brand-shine">Bay Estates</span>
-      <span class="brand-sub">Dubai Islands</span>
-    </a>
+    <div class="header-brand-group">
+      <a href="#top" class="brand-logo-text" aria-label="Bay Estates Dubai Islands Home">
+        <span class="brand-wordmark brand-shine">Bay Estates</span>
+        <span class="brand-sub">Dubai Islands</span>
+      </a>
+      <span class="header-brand-divider" aria-hidden="true"></span>
+      <span class="header-developer-badge">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nakheel_Properties_logo.svg" alt="Nakheel logo" loading="eager">
+        <span>By Nakheel</span>
+      </span>
+    </div>
     <a href="tel:+918208749700" class="header-cta header-cta-call-blue" aria-label="Call Bay Estates Dubai Islands">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
@@ -94,7 +111,7 @@
 <!-- ============================ HERO (FULL BACKGROUND) ============================ -->
 <section class="hero">
   <div class="hero-bg">
-    <img class="hero-bg-video" src="https://dubai-salesoffice.ae/bay-estates/public/images/hero.webp" width="1920" height="1080" alt="Bay Estates Island E Dubai Islands beachfront villas aerial view" fetchpriority="high">
+    <img class="hero-bg-video" src="https://dubai-salesoffice.ae/bay-estates/public/images/gallery/gallery1.webp" width="1920" height="1080" alt="Bay Estates Island E Dubai Islands beachfront villas aerial view" fetchpriority="high">
   </div>
   <div class="hero-inner hero-inner-v2">
     <span class="hero-presents reveal">NAKHEEL Presents</span>
@@ -149,7 +166,6 @@
     <span class="eyebrow" style="margin-bottom: 0; color: var(--gold-deep);">The Project</span>
   </div>
   <div class="ag-track" data-track>
-    <div class="ag-slide" data-caption="Bay Estates"><img src="https://dubai-salesoffice.ae/bay-estates/public/images/gallery/gallery1.webp" alt="Bay Estates Dubai Islands waterfront villas" width="900" height="600" loading="lazy" decoding="async"><a href="https://wa.me/918857090799?text=What%20views%20will%20I%20get%20from%20my%20villa%20at%20Bay%20Estates%3F" target="_blank" rel="noopener" class="ag-slide-tag">See Views From Home <span>→</span></a></div>
     <div class="ag-slide ag-slide-cta" data-caption="New Launch Offer">
       <div class="ag-token-card">
         <span class="atc-badge">Limited Period Offer</span>
@@ -162,6 +178,7 @@
     <div class="ag-slide" data-caption="Bay Estates"><img src="https://dubai-salesoffice.ae/bay-estates/public/images/gallery/gallery3.webp" alt="Bay Estates resort-style pool" width="900" height="600" loading="lazy" decoding="async"><a href="https://wa.me/918857090799?text=Send%20me%20the%20full%20amenities%20list%20for%20Bay%20Estates" target="_blank" rel="noopener" class="ag-slide-tag">Explore Amenities <span>→</span></a></div>
     <div class="ag-slide" data-caption="Bay Estates"><img src="https://dubai-salesoffice.ae/bay-estates/public/images/gallery/gallery4.webp" alt="Bay Estates beachfront living, Dubai Islands" width="900" height="600" loading="lazy" decoding="async"><a href="https://wa.me/918857090799?text=Send%20me%20details%20about%20private%20beach%20access%20at%20Bay%20Estates" target="_blank" rel="noopener" class="ag-slide-tag">See The Private Beach <span>→</span></a></div>
     <div class="ag-slide" data-caption="Bay Estates"><img src="https://dubai-salesoffice.ae/bay-estates/public/images/gallery/gallery5.webp" alt="Bay Estates contemporary interiors" width="900" height="600" loading="lazy" decoding="async"><a href="https://wa.me/918857090799?text=Send%20me%20all%20specifications%20for%20Bay%20Estates%20homes" target="_blank" rel="noopener" class="ag-slide-tag">View Specifications <span>→</span></a></div>
+    <div class="ag-slide" data-caption="Bay Estates"><img src="https://dubai-salesoffice.ae/bay-estates/public/images/hero.webp" alt="Bay Estates Island E Dubai Islands aerial view" width="900" height="600" loading="lazy" decoding="async"><a href="https://wa.me/918857090799?text=Send%20me%20an%20aerial%20overview%20of%20Bay%20Estates%20Dubai%20Islands" target="_blank" rel="noopener" class="ag-slide-tag">See The Island Overview <span>→</span></a></div>
   </div>
   <div class="ag-caption-rail" data-caption-rail></div>
   <div class="ag-hint"><span>Swipe to explore</span> <span class="ag-arrow">→</span></div>
