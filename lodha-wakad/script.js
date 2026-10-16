@@ -129,7 +129,7 @@ function fireFormConversion() {
       if (!ok) return;
 
       const message =
-        'Hi%2C+I+want+Priority+Allocation+for+THE+ARENA+PIMPRI+and+the+launch-phase+pricing.%0A%0A' +
+        'Hi%2C+I+want+to+book+a+Priority+EOI+(Token)+slot+for+LODHA+WAKAD.%0A%0A' +
         'Name%3A+' + encodeURIComponent(name) + '%0A' +
         'Mobile%3A+%2B91+' + encodeURIComponent(mob);
 
@@ -181,7 +181,7 @@ function fireFormConversion() {
       if (!ok) return;
 
       const message =
-        'Hi%2C+I+want+the+THE+ARENA+PIMPRI+launch+price+and+Priority+Allocation.%0A%0A' +
+        'Hi%2C+I+want+to+book+a+Priority+EOI+(Token)+slot+for+LODHA+WAKAD+(Rs.+4.5+Lakh+refundable).%0A%0A' +
         'Name%3A+' + encodeURIComponent(name) + '%0A' +
         'Mobile%3A+%2B91+' + encodeURIComponent(mob);
 
@@ -509,7 +509,7 @@ function fireFormConversion() {
 
   let autoScroll = true;
   let resumeTimer = null;
-  const speed = 0.7; // px per frame - slow but clearly visible, continuous drift
+  const speed = 0.45; // px per frame - slow but clearly visible, continuous drift
 
   function tick() {
     if (autoScroll && bar.scrollWidth > 0) {
@@ -588,7 +588,7 @@ function fireFormConversion() {
     if (mob.length < 10) { mobEl.classList.add('hf-error'); if (ok) mobEl.focus(); ok = false; } else { mobEl.classList.remove('hf-error'); }
     if (!ok) return;
     var message =
-      'Hi%2C+I+want+to+book+a+Priority+EOI+slot+for+LODHA+WAKAD.%0A%0A' +
+      'Hi%2C+I+want+to+book+a+Priority+EOI+(Token)+slot+for+LODHA+WAKAD.%0A%0A' +
       'Name%3A+' + encodeURIComponent(name) + '%0A' +
       'Mobile%3A+%2B91+' + encodeURIComponent(mob);
     window.open('https://wa.me/917820954441?text=' + message, '_blank');
