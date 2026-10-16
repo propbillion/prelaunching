@@ -6471,3 +6471,98 @@ letter-spacing: 0.045em !important;
 /* Floor plan images: show whole plan on white */
 .upc-visual { background: #fff !important; }
 .upc-visual > img { object-fit: contain !important; background: #fff; filter: blur(1.5px) !important; transform: none !important; }
+
+/* ============================================
+   LODHA WAKAD v4 - Premium unit cards + EOI metal card
+   ============================================ */
+.unit-row-simple.uc-premium {
+  background:
+    radial-gradient(120% 140% at 100% 0%, rgba(227,207,162,0.22) 0%, transparent 55%),
+    linear-gradient(180deg, #FFFFFF 0%, #FBF8F1 100%) !important;
+  border: 1px solid rgba(184,148,90,0.55) !important;
+  border-left: 1px solid rgba(184,148,90,0.55) !important;
+  border-radius: 20px !important;
+  box-shadow:
+    inset 0 0 0 5px #fff,
+    inset 0 0 0 6px rgba(184,148,90,0.28),
+    0 30px 60px -34px rgba(27,39,8,0.45),
+    0 2px 6px rgba(27,39,8,0.04) !important;
+  padding: 1.9rem 2.2rem !important;
+  overflow: hidden;
+}
+.unit-row-simple.uc-premium::before {
+  content: ''; position: absolute; left: 0; right: 0; top: 0; height: 4px;
+  background: linear-gradient(90deg, #8C6A33 0%, #E9D29B 35%, #B8945A 60%, #F0DDB0 80%, #8C6A33 100%);
+}
+.unit-row-simple.uc-premium:hover { transform: translateY(-4px); box-shadow: inset 0 0 0 5px #fff, inset 0 0 0 6px rgba(184,148,90,0.4), 0 40px 70px -34px rgba(27,39,8,0.55) !important; }
+.uc-premium .uc-badge {
+  width: 54px !important; height: 54px !important; border-radius: 50% !important;
+  font-family: 'Cormorant Garamond', serif !important; font-size: 19px !important; font-weight: 700 !important;
+  background: radial-gradient(circle at 30% 25%, #F6E7BF 0%, #C9A45E 45%, #8C6A33 100%) !important;
+  color: #1B2708 !important; border: 2px solid #fff;
+  box-shadow: 0 0 0 1px rgba(140,106,51,0.6), 0 10px 20px -8px rgba(140,106,51,0.7) !important;
+}
+.uc-premium .uc-badge.tier-4 {
+  background: radial-gradient(circle at 30% 25%, #5B7A2E 0%, #26360B 60%, #1B2708 100%) !important;
+  color: #F0DDB0 !important; box-shadow: 0 0 0 1px rgba(184,148,90,0.8), 0 10px 20px -8px rgba(27,39,8,0.7) !important;
+}
+.uc-premium .uc-name {
+  font-family: 'Cormorant Garamond', serif !important; font-size: 27px !important; font-weight: 600 !important;
+  color: #1B2708 !important; letter-spacing: 0.005em;
+}
+.uc-premium .uc-name-tag { color: #8C6A33 !important; font-size: 10.5px !important; letter-spacing: 0.2em !important; }
+.uc-premium .uc-area, .uc-premium .uc-price { border-color: rgba(184,148,90,0.3) !important; }
+.uc-premium .btn-unlock {
+  background: linear-gradient(135deg, #2E4012 0%, #1B2708 100%) !important; color: #F0DDB0 !important;
+  border: 1px solid rgba(227,207,162,0.55) !important; letter-spacing: 0.02em; padding: 0.85rem 1.4rem !important;
+  box-shadow: 0 12px 24px -12px rgba(27,39,8,0.7) !important;
+}
+@media (max-width: 800px) {
+  .unit-row-simple.uc-premium { padding: 1.6rem 1.4rem 1.4rem !important; grid-template-columns: 54px minmax(0,1fr) !important; }
+  .uc-premium .uc-name { font-size: 24px !important; }
+  .uc-premium .uc-area { border-top-color: rgba(184,148,90,0.3) !important; }
+}
+
+/* ---------- Metal card (EOI benefits) ---------- */
+.metal-wrap { display: flex; flex-direction: column; background: linear-gradient(180deg, #fff 0%, #FBF8F1 100%) !important; }
+.metal-card {
+  position: relative; display: flex; flex-direction: column; justify-content: space-between;
+  aspect-ratio: 1.586 / 1; margin: 1.4rem 1.4rem 0; padding: 1.2rem 1.35rem; border-radius: 16px; overflow: hidden;
+  color: #F3E6C4; text-decoration: none;
+  background:
+    repeating-linear-gradient(100deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, transparent 1px, transparent 3px),
+    radial-gradient(130% 90% at 15% 0%, #4A4636 0%, transparent 60%),
+    linear-gradient(135deg, #1E1D17 0%, #2E2C22 40%, #141410 100%);
+  border: 1px solid rgba(227,207,162,0.45);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.18), inset 0 -1px 0 rgba(0,0,0,0.5), 0 26px 44px -22px rgba(0,0,0,0.65);
+  transition: transform 0.5s cubic-bezier(0.22,1,0.36,1), box-shadow 0.5s ease;
+}
+.metal-card:hover { transform: translateY(-4px) rotate(-0.6deg); box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 36px 60px -24px rgba(0,0,0,0.7); }
+.metal-card::after {
+  content: ''; position: absolute; inset: 7px; border-radius: 11px; border: 1px solid rgba(227,207,162,0.22); pointer-events: none;
+}
+.mc-sheen {
+  position: absolute; top: -50%; left: -60%; width: 45%; height: 200%; transform: rotate(20deg);
+  background: linear-gradient(90deg, transparent 0%, rgba(255,240,200,0.20) 50%, transparent 100%);
+  animation: mcSheen 5.5s ease-in-out infinite; pointer-events: none;
+}
+@keyframes mcSheen { 0%, 55% { left: -60%; } 100% { left: 130%; } }
+.mc-top { display: flex; justify-content: space-between; align-items: flex-start; position: relative; z-index: 1; }
+.mc-brand { font-family: 'Jost', sans-serif; font-weight: 600; letter-spacing: 0.34em; font-size: 15px;
+  background: linear-gradient(135deg, #F6E7BF 0%, #B8945A 50%, #F0DDB0 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.mc-brand small { display: block; font-family: 'Cormorant Garamond', serif; font-style: italic; letter-spacing: 0.04em; font-size: 13px; margin-top: 2px; }
+.mc-tier { font-size: 9.5px; letter-spacing: 0.26em; text-transform: uppercase; font-weight: 700; color: #1B2708;
+  background: linear-gradient(135deg, #F6E7BF, #B8945A); padding: 0.3rem 0.65rem; border-radius: 999px; }
+.mc-chip {
+  position: relative; z-index: 1; width: 44px; height: 32px; border-radius: 6px; display: grid; grid-template-rows: repeat(3,1fr); padding: 5px 6px; gap: 3px;
+  background: linear-gradient(135deg, #F6E7BF 0%, #C9A45E 50%, #8C6A33 100%); box-shadow: inset 0 0 0 1px rgba(0,0,0,0.25);
+}
+.mc-chip i { display: block; border-top: 1px solid rgba(60,40,10,0.45); }
+.mc-num { position: relative; z-index: 1; font-family: 'Jost', sans-serif; font-weight: 600; font-size: clamp(13px, 1.5vw, 16px); letter-spacing: 0.16em;
+  color: #F3E6C4; text-shadow: 0 1px 0 rgba(0,0,0,0.6), 0 -1px 0 rgba(255,255,255,0.12); }
+.mc-bottom { position: relative; z-index: 1; display: flex; justify-content: space-between; gap: 1rem; font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #E8D7AE; }
+.mc-bottom em { display: block; font-style: normal; font-size: 8.5px; letter-spacing: 0.22em; color: rgba(232,215,174,0.6); margin-bottom: 2px; }
+.mc-bottom span:last-child { text-align: right; }
+.metal-cta { display: flex; justify-content: center; padding: 1.1rem 1.2rem 0.2rem; }
+.metal-cta .btn { white-space: normal; text-align: center; line-height: 1.3; }
+@media (prefers-reduced-motion: reduce) { .mc-sheen { animation: none; } }
