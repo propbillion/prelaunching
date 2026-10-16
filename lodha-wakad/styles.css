@@ -6435,3 +6435,39 @@ letter-spacing: 0.045em !important;
 .upc-sub-bold { font-family: 'Jost', sans-serif !important; font-size: 22px !important; font-weight: 700 !important; color: var(--forest) !important; }
 .upc-name { font-size: 22px !important; font-weight: 600 !important; }
 .sf-grid-4 .sf-lbl { white-space: nowrap; font-size: 11px; }
+
+/* ============================================
+   LODHA WAKAD v3 - premium + legible price, simple heading, floor plans
+   ============================================ */
+.price-head {
+  font-family: 'Jost', sans-serif; font-weight: 600; font-size: clamp(24px, 3vw, 32px);
+  letter-spacing: 0; color: var(--forest); margin: 0; line-height: 1.25;
+}
+/* Price: refined serif, lining figures, high contrast */
+.unit-row-simple .uc-price-value {
+  font-family: 'Cormorant Garamond', Georgia, serif !important;
+  font-variant-numeric: lining-nums tabular-nums; font-feature-settings: "lnum" 1;
+  font-size: 34px !important; font-weight: 700 !important; letter-spacing: 0 !important;
+  color: #1B2708 !important; line-height: 1; display: flex; align-items: baseline; gap: 0.3rem;
+}
+.uc-rs {
+  font-family: 'Jost', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.08em;
+  color: #8C6A33; align-self: center;
+}
+.uc-cr { font-size: 0.7em; font-weight: 600; color: #36412A; }
+.unit-row-simple .uc-price-value .uc-star { font-size: 16px !important; color: #8C6A33 !important; align-self: flex-start; }
+/* Carpet area: clean sans, dark, readable */
+.unit-row-simple .uc-area-value {
+  font-family: 'Jost', sans-serif !important; font-size: 20px !important; font-weight: 600 !important;
+  color: #1F2A10 !important; letter-spacing: 0 !important;
+}
+.unit-row-simple .uc-area-label, .unit-row-simple .uc-price-label {
+  font-size: 11.5px !important; color: #6B5326 !important; letter-spacing: 0.12em !important;
+}
+@media (max-width: 800px) {
+  .unit-row-simple .uc-price-value { font-size: 32px !important; }
+  .unit-row-simple .uc-area-value { font-size: 19px !important; }
+}
+/* Floor plan images: show whole plan on white */
+.upc-visual { background: #fff !important; }
+.upc-visual > img { object-fit: contain !important; background: #fff; filter: blur(1.5px) !important; transform: none !important; }
