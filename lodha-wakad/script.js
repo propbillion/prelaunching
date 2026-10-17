@@ -222,14 +222,16 @@ function fireFormConversion() {
 })();
 
 /* ============================================
-   V5 - Auto-sliding galleries (gentle, pauses on interaction)
+   V12 - Gallery: soft swipe nudge + slow auto-advance
+   Cycle: rest -> gentle peek-nudge toward next slide -> rest -> advance.
+   Nudges stop once the user swipes; everything pauses on touch.
    ============================================ */
 (function () {
   'use strict';
 
   const galleries = document.querySelectorAll('[data-autoslide="true"]');
   if (!galleries.length) return;
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   galleries.forEach((gallery) => {
     const track = gallery.querySelector('[data-track]');
@@ -237,55 +239,95 @@ function fireFormConversion() {
 
     let paused = false;
     let resumeTimer = null;
-    const SLIDE_INTERVAL = 2200; // faster - user notices horizontal scroll exists
+    let userSwiped = false;
+    let inView = false;
+    let busy = false;
+    let step = 0;
 
-    const advance = () => {
-      if (paused) return;
-      const slide = track.querySelector('.ag-slide');
-      if (!slide) return;
-      const slideWidth = slide.getBoundingClientRect().width + 16; // approx gap
-      const maxScroll = track.scrollWidth - track.clientWidth;
+    const hint = document.createElement('div');
+    hint.className = 'ag-swipe-hint';
+    hint.setAttribute('aria-hidden', 'true');
+    hint.innerHTML = '<span class="ash-hand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11V5.5a1.5 1.5 0 0 1 3 0V11"/><path d="M12 10.5V9a1.5 1.5 0 0 1 3 0v2"/><path d="M15 10.5a1.5 1.5 0 0 1 3 0V15a6 6 0 0 1-6 6h-.6a6 6 0 0 1-4.9-2.6L4.3 15.2a1.5 1.5 0 0 1 2.4-1.8L9 15.5"/></svg></span><span class="ash-txt">Swipe</span><span class="ash-arrow">&rarr;</span>';
+    gallery.appendChild(hint);
+    const placeHint = () => { hint.style.top = (track.offsetTop + track.clientHeight / 2) + 'px'; };
+    placeHint();
+    window.addEventListener('resize', placeHint, { passive: true });
+    window.addEventListener('load', placeHint);
+    setTimeout(placeHint, 1200);
 
-      // If we're near the end, loop back to start
-      if (track.scrollLeft + slideWidth > maxScroll - 4) {
-        track.scrollTo({ left: 0, behavior: 'smooth' });
-      } else {
-        track.scrollBy({ left: slideWidth, behavior: 'smooth' });
-      }
+    const slideWidth = () => {
+      const s = track.querySelector('.ag-slide');
+      if (!s) return 0;
+      const gap = parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap) || 16;
+      return s.getBoundingClientRect().width + gap;
     };
 
-    const pause = (durationMs = 7000) => {
+    const markSwiped = () => {
+      if (userSwiped) return;
+      userSwiped = true;
+      gallery.classList.add('ag-user-swiped');
+    };
+
+    const pause = (ms) => {
       paused = true;
       clearTimeout(resumeTimer);
-      resumeTimer = setTimeout(() => { paused = false; }, durationMs);
+      resumeTimer = setTimeout(() => { paused = false; }, ms);
     };
 
-    // Pause on user interaction
-    track.addEventListener('touchstart', () => pause(8000), { passive: true });
-    track.addEventListener('mousedown', () => pause(8000));
-    track.addEventListener('wheel', () => pause(4000), { passive: true });
+    // Any real touch / drag counts as the user having discovered the swipe
+    track.addEventListener('touchstart', () => { pause(9000); markSwiped(); }, { passive: true });
+    track.addEventListener('mousedown', () => pause(9000));
+    track.addEventListener('wheel', () => { pause(5000); markSwiped(); }, { passive: true });
     gallery.addEventListener('mouseenter', () => { paused = true; });
-    gallery.addEventListener('mouseleave', () => {
-      clearTimeout(resumeTimer);
-      resumeTimer = setTimeout(() => { paused = false; }, 600);
-    });
+    gallery.addEventListener('mouseleave', () => { clearTimeout(resumeTimer); resumeTimer = setTimeout(() => { paused = false; }, 800); });
 
-    // Only auto-advance when in view
-    let inView = false;
     if ('IntersectionObserver' in window) {
-      const io = new IntersectionObserver((entries) => {
-        entries.forEach(e => { inView = e.isIntersecting; });
-      }, { threshold: 0.3 });
-      io.observe(gallery);
-    } else {
-      inView = true;
-    }
+      new IntersectionObserver((es) => es.forEach((e) => { inView = e.isIntersecting; }), { threshold: 0.35 }).observe(gallery);
+    } else { inView = true; }
 
+    const nudge = () => {
+      // Soft peek: drift ~22% toward the next slide, then settle back
+      busy = true;
+      const prevSnap = track.style.scrollSnapType;
+      const prevBeh = track.style.scrollBehavior;
+      track.style.scrollSnapType = 'none';
+      track.style.scrollBehavior = 'auto';
+      const start = track.scrollLeft;
+      const dist = Math.min(slideWidth() * 0.22, 110);
+      const maxScroll = track.scrollWidth - track.clientWidth;
+      if (start + dist > maxScroll - 2) { busy = false; track.style.scrollSnapType = prevSnap; return; }
+      const dur = 1500;
+      const t0 = performance.now();
+      const ease = (t) => 0.5 - Math.cos(Math.PI * t) / 2; // easeInOutSine
+      const frame = (now) => {
+        if (paused) { track.scrollLeft = start; track.style.scrollSnapType = prevSnap; track.style.scrollBehavior = prevBeh; busy = false; return; }
+        const t = Math.min(1, (now - t0) / dur);
+        // out and back in one smooth sine arc
+        const k = t < 0.5 ? ease(t * 2) : ease((1 - t) * 2);
+        track.scrollLeft = start + dist * k;
+        if (t < 1) requestAnimationFrame(frame);
+        else { track.scrollLeft = start; track.style.scrollSnapType = prevSnap; track.style.scrollBehavior = prevBeh; busy = false; }
+      };
+      requestAnimationFrame(frame);
+    };
+
+    const advance = () => {
+      const w = slideWidth();
+      const maxScroll = track.scrollWidth - track.clientWidth;
+      if (track.scrollLeft + w > maxScroll + 4) track.scrollTo({ left: 0, behavior: 'smooth' });
+      else track.scrollBy({ left: w, behavior: 'smooth' });
+    };
+
+    if (reduce) return;
+
+    // Every 2.6s: before the user has swiped -> nudge, advance, nudge, advance...
+    // After the user has swiped -> only a slow advance every other tick.
     setInterval(() => {
-      if (inView && !paused && document.visibilityState === 'visible') {
-        advance();
-      }
-    }, SLIDE_INTERVAL);
+      if (!inView || paused || busy || document.visibilityState !== 'visible') return;
+      step++;
+      if (!userSwiped && step % 2 === 1) nudge();
+      else if (step % 2 === 0) advance();
+    }, 2600);
   });
 })();
 
